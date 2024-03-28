@@ -4,12 +4,12 @@ import { FormEvent, useState } from "react";
 import toast from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { Navigate, useLocation, useNavigate } from "react-router-dom";
-import { CartReducerInitialState, UserReducerInitialState } from "../types/reducer-types";
 import { useNewOrderMutation } from "../redux/api/orderAPI";
-import { NewOrderRequest } from "../types/api-types";
 import { resetCart } from "../redux/reducer/cartReducer";
-import { responseToast } from "../utils/features";
 import { RootState } from "../redux/store";
+import { NewOrderRequest } from "../types/api-types";
+import { CartReducerInitialState } from "../types/reducer-types";
+import { responseToast } from "../utils/features";
 
 
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_KEY);

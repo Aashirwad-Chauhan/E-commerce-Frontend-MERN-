@@ -1,3 +1,14 @@
+# Install Dependencies
+- **Frontend**: 
+- **For Dev** - npm i && npm run build
+- **For Production** - npm i && npm run preview
+
+
+# ENV Vars
+- Go through the code once and add a file **.env** with all the env vars info. 
+- **process.env.ENV_VAR_NAME**  - This is how you know that env var is used there. 
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
